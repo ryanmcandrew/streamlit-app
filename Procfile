@@ -1,1 +1,1 @@
-web: streamlit run main.py --server.port 80
+web: sh setup.sh && streamlit run main.py
