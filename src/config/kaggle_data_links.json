@@ -1,0 +1,26 @@
+{
+    "kl_data": 
+    [
+        {
+            "url_path":"jeanmidev/doctor-who",
+            "storage_path": "/src/data/",
+            "filename":"all-detailsepisodes.csv"
+        },
+        {
+            "url_path":"jeanmidev/doctor-who",
+            "storage_path": "/src/data/",
+            "filename":"all-scripts.csv"
+        },
+        {
+            "url_path":"jeanmidev/doctor-who",
+            "storage_path": "/src/data/",
+            "filename":"dwguide.csv"
+        },
+        {
+            "url_path":"jeanmidev/doctor-who",
+            "storage_path": "/src/data/",
+            "filename":"imdb_details.csv"
+        }
+    ]
+    
+}
