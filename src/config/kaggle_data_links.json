@@ -9,11 +9,6 @@
         {
             "url_path":"jeanmidev/doctor-who",
             "storage_path": "/src/data/",
-            "filename":"all-scripts.csv"
-        },
-        {
-            "url_path":"jeanmidev/doctor-who",
-            "storage_path": "/src/data/",
             "filename":"dwguide.csv"
         },
         {
