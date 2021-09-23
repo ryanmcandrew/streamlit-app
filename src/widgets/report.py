@@ -6,10 +6,12 @@ import pandas as pd
 def run():
     k_data_sources = json.load(open(os.getcwd() + '/src/config/kaggle_data_links.json','r'))
 
+    st.title("Kaggle Data")
     stcontainer = st.container()
     col1, col2 = stcontainer.columns(2)
     dataframes = []
     count=0
+
     for i in k_data_sources['kl_data']:
         df = pd.read_csv(os.getcwd() +i['storage_path'] + i['filename'])
         dataframes.append(df)
@@ -19,17 +21,17 @@ def run():
             # j.title(i['filename'] + " Report")
             # j.write(df)
         # 
-        # st.write(df)
+        
         # chart_df = pd.DataFrame(df, columns=df.columns)
         # st.line_chart(chart_df)
         
         if (count % 2) == 0:
             
-            col1.header(i['filename'])
+            col1.header(i['url_path'] + "\n" + i['filename'])
             col1.dataframe(df)
         else:
             
-            col2.header(i['filename'])
+            col2.header(i['url_path'] + "\n" + i['filename'])
             col2.dataframe(df)
             # col2.line_chart()
         count+=1
